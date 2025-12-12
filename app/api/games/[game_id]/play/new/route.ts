@@ -37,7 +37,7 @@ export async function POST(
   }
 
   const { data: boxesData, error: boxesError } = await tryCatch(
-    fetch("http://localhost:3000/boxes.json"),
+    fetch("/boxes.json"),
   );
 
   if (boxesError) {
@@ -51,6 +51,7 @@ export async function POST(
   );
 
   if (boxesJSONError) {
+    console.log("boxesERROR", boxesError);
     return new Response(boxesJSONError.message, {
       status: 500,
     });
