@@ -17,7 +17,7 @@ export async function connectToDatabase(): Promise<Db> {
     cachedClient = new MongoClient(uri);
     await cachedClient.connect();
   }
-  const dbName = uri.split("/").pop()?.split("?")[0] || "test";
+  const dbName = uri.split("/").pop()?.split("?")[0] || "ai";
   cachedDb = cachedClient.db(dbName);
   return cachedDb;
 }

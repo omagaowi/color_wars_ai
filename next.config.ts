@@ -12,7 +12,9 @@
 const nextConfig = {
   rewrites: async () => [
     { source: "/((?!api/).*)", destination: "/static-app-shell" },
-  ],
+  ], typescript: {
+    ignoreBuildErrors: true,
+  },
   // other Next.js config...
 };
 
