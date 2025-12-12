@@ -1,0 +1,113 @@
+.userlist-modal{
+    width: 270px;
+    height: 350px;
+    background: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+    left: 50%;
+    transition: all .2s ease;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%)
+    scale(0.7);
+}
+
+.userlist-heading{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userlist-heading h2{
+    color: #fff;
+    font-size: 21px;
+    margin-top: 10px;
+}
+
+.userlist-modal .users-list{
+    width: 100%;
+    height: fit-content;
+    margin-top: 30px;
+    min-height: 200px;
+    /* background: rebeccapurple; */
+}
+
+.userlist-modal .user{
+    width: 100%;
+    height: 55px;
+    border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
+}
+
+.userlist-modal .user:last-child{
+    border-bottom: 1px solid #fff;
+}
+
+.userlist-modal .user .circle{
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    /* background: #406e81; */
+    opacity: .8;
+    margin: 0px 7px 0px 15px;
+}
+
+.userlist-modal .user-text{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    /* background: red; */
+}
+
+.userlist-modal .user-text h3{
+    font-size: 20px;
+    color: #fff;
+}
+
+.userlist-modal .user-text h6{
+    font-size: 13px;
+    color: green;
+}
+
+.userlist-modal .userlist-actions{
+    width: 100%;
+    height: 60px;
+    /* background: #406e81; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.userlist-modal .userlist-actions button{
+    margin: 0px 10px;
+    padding: 0px 10px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    border: none;
+}
+
+.userlist-modal .userlist-actions button:nth-child(1){
+    color: red;
+    background: #fff;
+}
+
+.userlist-modal .userlist-actions button:nth-child(2){
+    color: #fff;
+    background: red;
+}
+
+.userlist-modal.show{
+    opacity: initial;
+    transform: translate(-50%, -50%)
+    scale(1);
+    pointer-events: all;
+}

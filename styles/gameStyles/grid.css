@@ -1,0 +1,40 @@
+.grid_area{
+    width: 90vw;
+    min-width: 300px; 
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background: wheat; */
+}
+
+.grid_area.style_8{
+  max-width: 640px;
+  aspect-ratio: 1;
+}
+
+.grid_area.style_6{
+  max-width: 480px;
+  aspect-ratio: 1;
+}
+
+.grid_area.style_5{
+  max-width: 400px;
+  aspect-ratio: 1;
+}
+
+.grid_area .row{
+    width: 100%;
+    display: flex;
+    /* background: red; */
+    margin: 5px 0px;
+  }
+  
+
+
+@media screen and (min-width: 800px) {
+  .grid_area.style_8{
+    scale: .8;
+  }
+}

@@ -1,0 +1,100 @@
+.options-container.options1 .options-pick,
+.options-container.options2 .options-pick{
+    max-width: 800px;
+    width: 80vw;
+    min-height: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    align-content: center;
+    margin-top: 60px;
+}
+
+.options-container.options1 .options-pick .option,
+.options-container.options2 .options-pick .option{
+    height: 250px;
+    background: #4e839a;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.options-container.options1 .options-pick .option:hover,
+.options-container.options2 .options-pick .option:hover{
+    background: #31515f;
+}
+
+.options-container.options1 .option h2{
+    color: #95c1d4;
+    font-size: 35px;
+}
+
+.options-container.options1 .option svg{
+    color: #95c1d4;
+    width: 80px;
+    height: 80px;
+}
+
+/* options2 */
+
+.options-container.options2 .options-pick{
+    max-width: 90vw;
+    width: 90vw;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* background: red; */
+}
+
+.options-container.options2 .options-pick .option{
+   height: 200px;
+}
+
+.options-container.options2 .options-pick svg{
+    color: #95c1d4;
+    width: 50px;
+    height: 50px;
+}
+
+.options-container.options2 .option h2{
+    color: #95c1d4;
+    font-size: 30px;
+}
+
+.not-available{
+    max-width: 380px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 230px;
+    background: #4e839a;
+    border-radius: 10px;
+}
+
+.not-available svg{
+    color: #95c1d4;
+    width: 60px;
+    height: 60px;
+}
+
+.not-available h2{
+    color: #002b3e;
+}
+
+.not-available p{
+    color: #565656;
+}
+
+.main-load{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+    color: #95c1d4;
+}

@@ -1,0 +1,123 @@
+.game-heading{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    width: 100vw;
+    height: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.game-heading .users{
+    width: 45px;
+    height: 30px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #303030;
+    cursor: pointer;
+}
+
+.game-heading .users svg{
+    margin-right: 3px;
+}
+
+.game-heading .github svg{
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;    
+}
+
+
+.game-heading.blue{
+    background: #406e81;
+}
+
+.game-heading.blue .users{
+    background: #cdf0ff;
+}
+
+.game-heading.blue .github svg{
+    color: #cdf0ff;
+}
+
+.game-heading.red{
+    background: #a10000;
+}
+
+.game-heading.red .users{
+    background: #ffd4d4;
+}
+
+.game-heading.red .github svg{
+    color: #f7b5b5;
+}
+
+.game-heading.green{
+    background: #3e943e;
+}
+
+.game-heading.green .users{
+    background: #d7ffd7;
+}
+
+.game-heading.green .github svg{
+    color: #aff5af;
+}
+
+.game-heading.yellow{
+    background: #c19647;
+}
+
+.game-heading.yellow .users{
+    background: #fff0d3;
+}
+
+.game-heading.yellow .github svg{
+    color: #f8dfb0;
+}
+
+.game-heading .github svg:hover{
+    color: #2d2d2d;
+}
+
+.timer{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    background: rgb(0, 0, 0, .4);
+}
+
+.timer .progress{
+    height: 50%;
+    border-radius: 0px 10px 10px 0px;
+    transition: all .3s linear;
+}
+
+
+.game-heading.blue .timer .progress{
+     background: #9bdffc;
+}
+
+.game-heading.red .timer .progress{
+    background: #ff0000;
+}
+
+.game-heading.yellow .timer .progress{
+    background: #ffa600;
+}
+
+.game-heading.green .timer .progress{
+    background: #5eff5e;
+}

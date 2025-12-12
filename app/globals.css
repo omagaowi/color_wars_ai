@@ -1,26 +1,82 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    :root {
+        --background: #0a0a0a;
+        --foreground: #ededed;
+    }
+}
+
+* {
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    /*background: var(--background);*/
+    color: var(--foreground);
+    background: #406e81;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+
+header {
+    width: 100vw;
+    /*background-color: red;*/
+    height: 60px;
+    background: #406e81;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    align-items: center;
+    left: 0px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+h1.logo {
+    color: #95c1d4;
+    width: 200px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #406e81;
+}
+
+.option-1 {
+    max-width: 800px;
+    width: 80vw;
+    min-height: 300px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    align-content: center;
+    /*margin-top: 60px;*/
 }

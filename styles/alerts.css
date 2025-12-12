@@ -1,0 +1,87 @@
+.alerts {
+    min-width: 100px;
+    width: fit-content;
+    height: 43px;
+    position: fixed;
+    max-width: 92vw;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.15),
+        0 3px 6px rgba(0, 0, 0, 0.15);
+    /*z-index: 2;*/
+    border-radius: 6px;
+    display: flex;
+    padding: 0px 15px 0px 10px;
+    transition: all 0.3s ease;
+    /* justify-content: center; */
+    opacity: 0;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.alerts svg {
+    width: 20px;
+    margin-top: 5px;
+    height: 20px;
+}
+
+.alerts h5 {
+    font-weight: bolder;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.alerts.red {
+    background: #fee6e6;
+}
+
+.alerts.red svg {
+    color: #880000;
+}
+
+.alerts.red h5 {
+    color: #310000;
+}
+
+.alerts.green {
+    background: #d4ffd4;
+}
+
+.alerts.green svg {
+    color: #3e943e;
+}
+
+.alerts.green h5 {
+    color: #142d14;
+}
+
+.alerts.blue {
+    background: #c0ecff;
+}
+
+.alerts.blue svg {
+    color: #2a4f5f;
+}
+
+.alerts.blue h5 {
+    color: #1b313a;
+}
+
+.alerts.yellow {
+    background: #fee9c0;
+}
+
+.alerts.yellow svg {
+    color: #835500;
+}
+
+.alerts.yellow h5 {
+    color: #3c2906;
+}
+
+.alerts.show {
+    opacity: initial;
+    transform: translate(-50%, 0px);
+}

@@ -1,0 +1,216 @@
+.box{
+    aspect-ratio: 1;
+    margin: 0px 5px;
+    background: #fff9ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.box .circle{
+    width: 85%;
+    height: 85%;
+    /* background: #599cb6; */
+    border-radius: 50%;
+    transition: all .3s;
+    position: relative;
+  }
+  
+  
+  .box .circle.circle0{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background: transparent;
+  }
+  
+  .dots{
+    width: 16%;
+    min-width: 4.5px;
+    aspect-ratio: 1;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0;
+    /* display: none; */
+  }
+  
+  .dots:nth-child(1){
+    top: 33%;
+    left: 33%;
+  }
+  
+  .dots:nth-child(2){
+    top: 33%;
+    right: 33%;
+  }
+  
+  .dots:nth-child(3){
+    bottom: 33%;
+    right: 33%;
+  }
+  
+  .dots:nth-child(4){
+    bottom: 33%;
+    left: 33%;
+  }
+  
+  
+  
+  /* for 4 circles */
+  
+  .box.cir4 .dots:nth-child(1),
+  .box.cir5 .dots:nth-child(1){
+    top: 25%;
+    display: flex;
+    left: 25%;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir4 .dots:nth-child(2),
+  .box.cir5 .dots:nth-child(2){
+    top: 25%;
+    right: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir4 .dots:nth-child(3),
+  .box.cir5 .dots:nth-child(3){
+    bottom: 25%;
+    right: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir4 .dots:nth-child(4),
+  .box.cir5 .dots:nth-child(4){
+    bottom: 25%;
+    left: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  
+  /* for 3 circles */
+  
+  .box.cir3 .dots:nth-child(1){
+    top: 32%;
+    left: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir3 .dots:nth-child(2){
+    top: 32%;
+    right: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir3 .dots:nth-child(3){
+    bottom: 18%;
+    left: 50%;
+    display: flex;
+    opacity: initial;
+    transform: translate(-50%, -50%);
+    transition: all .3s ease;
+  }
+  .box.cir3 .dots:nth-child(4){
+    bottom: 25%;
+    left: 25%;
+    opacity: 0;
+  }
+  
+  /* for 2 circles */
+  
+  .box.cir2 .dots:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir2 .dots:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir2 .dots:nth-child(3){
+    opacity: 0;
+  }
+  .box.cir2 .dots:nth-child(4){
+    opacity: 0;
+  }
+  
+  /* for 1 circle */
+  
+  .box.cir1 .dots:nth-child(1){
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .box.cir1 .dots:nth-child(2){
+    opacity: 0;
+  }
+  .box.cir1 .dots:nth-child(3){
+    opacity: 0;
+  }
+  .box.cir1 .dots:nth-child(4){
+    opacity: 0;
+  }
+  
+  .box.bx-blue .circle{
+    background: #599cb6;
+  }
+  
+  .box.bx-red .circle{
+    background: #a10000;
+  }
+  
+  .box.bx-green .circle{
+    background: #3e943e;
+  }
+  
+  .box.bx-yellow .circle{
+    background: #c19647;
+  }
+  
+
+.box.bx-blue-red .circle,
+.box.bx-red-blue .circle{
+  background: linear-gradient(45deg, #599cb6 49.5%, #a10000 50.5%);
+}
+
+.box.bx-blue-green .circle,
+.box.bx-green-blue .circle{
+  background: linear-gradient(45deg, #599cb6 49.5%, #3e943e 50.5%);
+}
+
+.box.bx-blue-yellow .circle,
+.box.bx-yellow-blue .circle{
+  background: linear-gradient(45deg, #599cb6 49.5%, #c19647 50.5%);
+}
+
+.box.bx-red-yellow .circle,
+.box.bx-yellow-red .circle{
+  background: linear-gradient(45deg, #a10000 49.5%, #c19647 50.5%);
+}
+
+.box.bx-red-green .circle,
+.box.bx-green-red .circle{
+  background: linear-gradient(45deg, #a10000 49.5%, #3e943e 50.5%);
+}
+
+.box.bx-green-yellow .circle,
+.box.bx-yellow-green .circle{
+  background: linear-gradient(45deg, #3e943e 49.5%, #c19647 50.5%);
+}

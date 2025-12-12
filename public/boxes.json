@@ -1,0 +1,158 @@
+{
+  "boxes": [
+    {
+      "row": 1,
+      "column": 1,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 1,
+      "column": 2,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 1,
+      "column": 3,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 1,
+      "column": 4,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 1,
+      "column": 5,
+      "circles": 0,
+      "player": []
+    },
+
+    {
+      "row": 2,
+      "column": 1,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 2,
+      "column": 2,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 2,
+      "column": 3,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 2,
+      "column": 4,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 2,
+      "column": 5,
+      "circles": 0,
+      "player": []
+    },
+
+    {
+      "row": 3,
+      "column": 1,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 3,
+      "column": 2,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 3,
+      "column": 3,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 3,
+      "column": 4,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 3,
+      "column": 5,
+      "circles": 0,
+      "player": []
+    },
+
+    {
+      "row": 4,
+      "column": 1,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 4,
+      "column": 2,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 4,
+      "column": 3,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 4,
+      "column": 4,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 4,
+      "column": 5,
+      "circles": 0,
+      "player": []
+    },
+
+    {
+      "row": 5,
+      "column": 1,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 5,
+      "column": 2,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 5,
+      "column": 3,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 5,
+      "column": 4,
+      "circles": 0,
+      "player": []
+    },
+    {
+      "row": 5,
+      "column": 5,
+      "circles": 0,
+      "player": []
+    }
+  ]
+}

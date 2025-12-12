@@ -1,0 +1,126 @@
+.loader{
+    width: 100vw;
+    height: 100vh;
+    background: #599cb6;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display:  flex;
+    align-items: center;
+    transition: all .3s;
+    justify-content: center;
+}
+
+.loader.fade{
+    transition-duration: .3s;
+    opacity: 0;
+}
+
+.box.fade{
+   scale: 1.5;
+    opacity: 0;
+}
+
+.loader.load1{
+    background: #406e81;
+}
+
+.loader.load2{
+    background: #a10000;
+}
+
+.loader.load3{
+    background: #3e943e;
+}
+
+.loader.load4{
+    background: #c19647;
+}
+
+.loader.load5{
+    background: #406e81;
+}
+
+.loader .box{
+    transition: all .3s ease;
+}
+
+
+.loader .box.cir5 .dots{
+    opacity: initial;
+}
+
+.loader .box.cir1{
+    transform: rotate(0deg);
+}
+
+.loader .box.cir2{
+    transform: rotate(45deg);
+}
+
+.loader .box.cir3{
+    transform: rotate(90deg);
+}
+
+.loader .box.cir4{
+    transform: rotate(135deg);
+}
+
+.loader .box.cir5{
+    transform: rotate(180deg);
+}
+
+
+
+.loader .box.cir1 .circle{
+    background: #599cb6;
+}
+
+.loader .box.cir2 .circle{
+   background: #ff0000;
+}
+
+.loader .box.cir3 .circle{
+    background: #76e776;
+}
+
+.loader .box.cir4 .circle{
+   background: #ffce72;
+}
+
+.loader .box.cir5 .circle{
+    transform: rotate(180deg);
+    background: #599cb6;
+}
+
+
+.loader .box.cir5 .dots:nth-child(1){
+    top: 25%;
+    display: flex;
+    left: 25%;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+
+
+  .loader .box.cir5 .dots:nth-child(2){
+    top: 25%;
+    right: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .loader .box.cir5 .dots:nth-child(3){
+    bottom: 25%;
+    right: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }
+  .loader .box.cir5 .dots:nth-child(4){
+    bottom: 25%;
+    left: 25%;
+    display: flex;
+    opacity: initial;
+    transition: all .3s ease;
+  }

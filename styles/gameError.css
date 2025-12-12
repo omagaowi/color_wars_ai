@@ -1,0 +1,44 @@
+.game-error{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #406e81;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-error .error-box{
+    width: 400px;
+    height: 270px;
+    background: #31515f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #95c1d4;
+}
+
+.game-error .error-box svg{
+    width: 80px;
+    height: 80px;
+}
+
+.game-error .error-box h3{
+    font-size: 26px;
+}
+
+.game-error .error-box button{
+    padding: 0px 10px;
+    height: 30px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;    
+    background: #95c1d4;
+    color: #295264;
+    cursor: pointer;
+}

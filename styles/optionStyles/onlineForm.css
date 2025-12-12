@@ -1,0 +1,81 @@
+.options-container.online-form form h2{
+    color: #95c1d4;
+    font-size: 45px;
+}
+
+.options-container.online-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.options-container.online-form form .input-field{
+    width: 350px;
+    height: 50px;
+    background: #4e839a;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+}
+
+.options-container.online-form form .input-field input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 17px;
+    color: #95c1d4;
+}
+
+.options-container.online-form .input-field input::placeholder{
+    color: #95c1d4;
+}
+
+.options-container.online-form form button{
+    width: 100px;
+    height: 40px;
+    background: #4e839a;
+    border: none;
+    outline: none;
+    color: #95c1d4;
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s ease;
+    border-radius: 5px;
+}
+
+.options-container.online-form form button:hover{
+    background: #31515f;
+}
+
+.options-container.online-form form.room-form input{
+    width: calc(100% - 50px);
+}
+
+.options-container.online-form .room-form .create-btn{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+
+.options-container.online-form .room-form .create-btn:hover{
+    cursor: pointer;
+    background: #31515f;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.options-container.online-form .room-form .create-btn svg{
+    color: #95c1d4;
+    width: 20px;
+    height: 20px;
+}

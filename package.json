@@ -9,9 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.6",
+    "@ducanh2912/next-pwa": "^10.2.9",
+    "ai": "^5.0.108",
+    "axios": "^1.13.2",
+    "js-cookie": "^3.0.5",
+    "mongodb": "^7.0.0",
+    "next": "^16.0.7",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-dom": "19.2.0",
+    "react-router": "^7.10.0",
+    "socket.io-client": "^4.8.1",
+    "uuid": "^13.0.0",
+    "zustand": "^5.0.9"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
