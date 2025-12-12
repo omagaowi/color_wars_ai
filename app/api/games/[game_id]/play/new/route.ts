@@ -36,9 +36,9 @@ export async function POST(
     });
   }
 
-  const { data: boxesData, error: boxesError } = await tryCatch(
-    fetch("/boxes.json"),
-  );
+  const url = new URL("/boxes.json", request.url).toString();
+
+  const { data: boxesData, error: boxesError } = await tryCatch(fetch(url));
 
   if (boxesError) {
     return new Response(boxesError.message, {
