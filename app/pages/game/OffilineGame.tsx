@@ -323,6 +323,7 @@ const OfflineGame = () => {
         );
       })
       .catch((error) => {
+        console.log('error', error)
         newAIAlert(
           {
             type: "error",

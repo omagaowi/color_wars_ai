@@ -73,7 +73,7 @@ const Lobby = () => {
               console.log(data);
               setBoxes(data.boxes);
               localStorage.setItem("boxes", JSON.stringify(data.boxes));
-              navigate("/offline/game/4980");
+               navigate(`/game/play/${game_id}`);
             })
             .catch((err) => {
               setStartLoading(false);
