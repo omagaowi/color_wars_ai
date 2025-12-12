@@ -69,7 +69,7 @@ export const dbAddNewPlayer = async (db: Db, data: Player) => {
   if (playerError) {
     throw playerError;
   }
-  if (playerData) {
+  if (Object.keys(playerData).length > 0) {
     const { data: updatePlayerData, error: updatePlayerError } = await tryCatch(
       dbUpdatePlayerById(db, data),
     );
